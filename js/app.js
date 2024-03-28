@@ -263,7 +263,7 @@ const progress = (() => {
     let loaded = 0;
 
     const progress = () => {
-        loaded += 14;
+        loaded += 1;
 
         bar.style.width = Math.min((loaded / total) * 100, 100).toString() + "%";
         info.innerText = `Tunggu sebentar ya.. (${loaded}/${total}) [${parseInt(bar.style.width).toFixed(0)}%]`;
