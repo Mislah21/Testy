@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Nadia & Lapi - undangan nikah</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Free HTML Templates" name="keywords">
+  <meta content="Free HTML Templates" name="description">
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Customized animated Stylesheet -->
+  <link href="css/animate.css" rel="stylesheet">
+</head>
+
+  <style>
+
+  
+    #popup{
+      width: 100%;
+      height: 100%;
+      background-image:url(https://i.postimg.cc/k5WbWccM/png-20230607-090148-0000.png) ;
+      background-size: 100%;
+      position: fixed;
+      z-index: 99999;
+      
+    }
+    .popup__content{
+      width: 80%;
+      height: 80%;
+      background-color: pink;
+      margin: 5vh auto;
+      position: relative;
+      box-shadow: 20px 20px 50px black;
+    }
+
+      .popup__love{
+      width: 15%;
+      height: 15%;
+      background-color: transparent;
+      margin:5px;
+      position: relative;
+      box-shadow: 35px white;
+      padding-bottom: -50px;
+    }
+    .popup__image{
+      width: 100%;
+     height: 100%;
+    position: absolute;
+      
+      
+    }
+    .popup__dismiss{ 
+      
+      margin-top: 5px;
+      bottom: 15%;
+      right: 30%;
+      position: absolute;
+      width: 130px;
+      z-index:9999;
+      
+    }
+    .popup__shop{
+      
+      width: 120px;
+      height: 60px;
+    }
+
+    .popup--show {
+      opacity: 1;
+    }
+  </style>
+
+  <script type="text/javascript">
+  
+const audio = new Audio();
+audio.src ="song.mp3"
+
+
+function tutuppopup (){   document.getElementById("popup").style.display=("none"); 
+}
+
+    
+  </script>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+
+<div id="popup">
+   <div class="popup__content">
+      <img class="popup__image" src="https://i.postimg.cc/VLbnMCDt/cover.png" alt="cover"> 
+      <div class="popup__dismiss btn btn-primary mb-4 btn-outline-primary" onclick="tutuppopup(); audio.play();"><i class="fa fa-envelope fa-spin"></i>  Buka
+                  
+     </div>   
+   </div>
+ </div>
+  
+  <!-- Navbar Start -->
+  <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+    <a href="index.html" class="navbar-brand d-block d-lg-none">
+      <h1 class="font-secondary text-white mb-2 animated pulse infinite">Nadia <span class="text-pink">&</span> Lapi</h1>
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <div class="navbar-nav ml-auto py-0">
+        <a href="#home" class="nav-item nav-link active">Home</a>
+        <a href="#pengantin" class="nav-item nav-link">Pengantin</a>
+        <a href="#acara" class="nav-item nav-link">Acara</a>
+      </div>
+      <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+        <h1 class="animated pulse infinite font-secondary text-white mb-1">Nadia <span class="text-pink">&</span> Lapi</h1>
+      </a>
+      <div class="navbar-nav mr-auto py-0">
+        <a href="#maps" class="nav-item nav-link">Lokasi Acara</a>
+        <a href="#rsvp" class="nav-item nav-link">Buku Tamu</a>
+        <a href="#contact" class="nav-item nav-link">Kontak</a> 
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+
+  <!-- Carousel Start -->
+  <div class="container-fluid p-0 mb-5 pb-5" id="home">
+    <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
+          <img class="position-absolute w-100 h-100" src="https://i.postimg.cc/gkycKrPr/IMG-20230529-WA0005.jpg" style="object-fit: cover;">
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <div class="p-3" style="max-width: 900px;">
+              <img class="animated pulse infinite" src="C.png" width="60%" padding-bottom="50px">
+              <h1 class="animated bounce infinite display-1 font-secondary text-white mt-n3 mb-md-4">Nadia & Lapi</h1>
+              
+              <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Undangan Pernikahan</h3>
+                <h3 class="text-uppercase font-weight-small text-white m-0" style="letter-spacing: 2px;">wedding invitation</h3>
+              </div>
+              <button type="button" class="btn-play mx-auto" data-toggle="modal"
+                data-src="" data-target="#videoModal">
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  <!-- Carousel End -->
+
+
+  <!-- Video Modal Start 
+  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <!-- 16:9 aspect ratio 
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+              allow="autoplay"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Video Modal End -->
+
+
+  <!-- About Start -->
+  <div class="container-fluid py-5" id="pengantin">
+    <div class="container py-5">
+      <div class="section-title position-relative text-center">
+        <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;"></h6>
+        <h1 class="animated pulse infinite font-secondary display-4">Menikah</h1>
+        <i class=" animated bounce infinite far fa-heart text-dark"></i>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+
+        </div>
+        <div class="row">
+          <div class="col-md-6 border-right border-primary">
+            <div class="text-center text-md-center mr-md-3 mb-4 mb-md-0">
+              <img class="animated pulse infinite img-fluid mb-0" src="https://i.postimg.cc/qqPyH5BK/removal-ai-tmp-647fe94f3e503.png" width="50%" alt="">
+              <h4 class="font-secondary text-black display-4 pr-3">Nadia N. </h4>
+
+            </div>
+          </div>
+   <div class="container-fluid py-5">
+     <img src="flower.png" width="70%" >
+       </div>
+     
+          <div class="col-md-6">
+            <div class="text-center text-md-center ml-md-3">
+              <img class="animated pulse infinite img-fluid pl-6 mb-0" src="https://i.postimg.cc/RCyctN10/removal-ai-tmp-647fe98e82109.png" width="50%" alt="">
+              <h4 class="font-secondary text-black display-4 pr-3">L a p i</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About End -->
+
+
+    <!-- Story Stary -->
+
+    <!-- Story End -->
+
+
+    <!-- Gallery Start -->
+    <div class="animated tada  container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
+      <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
+        <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;"></h6>
+        <h1 class="  animated pulse infinite font-secondary display-4 text-dark">Our Photo Gallery</h1>
+        <i class=" animated bounce infinite far fa-heart text-dark"></i>
+      </div>
+      <div class="owl-carousel gallery-carousel">
+        <div class="gallery-item">
+          <img class="img-fluid w-100" src="https://i.postimg.cc/4ym451sg/IMG-20230529-WA0008.jpg" alt="">
+          <a href="1" data-lightbox="gallery">
+            <i class="fa fa-2x fa-plus text-white"></i>
+          </a>
+          <img class="img-fluid w-100" src="https://i.postimg.cc/gkycKrPr/IMG-20230529-WA0005.jpg" alt="">
+          <a href="1" data-lightbox="gallery">
+            <i class="fa fa-2x fa-plus text-white"></i>
+          </a>
+        </div>
+        <div class="gallery-item">
+          <img class="img-fluid w-100" src="https://i.postimg.cc/T3qxnsgb/IMG-20230529-WA0004.jpg" alt="">
+          <a href="2" data-lightbox="gallery">
+            <i class="fa fa-2x fa-plus text-white"></i>
+          </a>
+          <img class="img-fluid w-100" src="https://i.postimg.cc/gkycKrPr/IMG-20230529-WA0005.jpg" alt="">
+          <a href="3" data-lightbox="gallery">
+            <i class="fa fa-2x fa-plus text-white"></i>
+          </a>
+        </div>
+        <div class="gallery-item">
+          <img class="img-fluid w-100" src="https://i.postimg.cc/7h0HdZGs/IMG-20230529-WA0009.jpg" alt="">
+          <a href="4" data-lightbox="gallery">
+            <i class="fa fa-2x fa-plus text-white"></i>
+          </a>
+          <img class="img-fluid w-100" src="https://i.postimg.cc/8PgPWM9q/IMG-20230529-WA0006.jpg" alt="">
+          <a href="5" data-lightbox="gallery">
+            <i class="fa fa-2x fa-plus text-white"></i>
+          </a>
+        </div>
+        <div class="gallery-item">
+          <img class="img-fluid w-100" src="https://i.postimg.cc/h4dtfpyL/IMG-20230529-WA0007.jpg" alt="">
+          <a href="6" data-lightbox="gallery">
+            <i class="fa fa-2x fa-plus text-white"></i>
+          </a>
+          <img class="img-fluid w-100" src="https://i.postimg.cc/sDKdXWrP/IMG-20230529-WA0002.jpg" alt="">
+          <a href="7" data-lightbox="gallery">
+            <i class="fa fa-2x fa-plus text-white"></i>
+          </a>
+        </div>
+        <div class="gallery-item">
+          <img class="img-fluid w-100" src="https://i.postimg.cc/t4HyZbZy/IMG-20230529-WA0003.jpg" alt="">
+          <a href="img/8.jpg" data-lightbox="gallery">
+            <i class="fa fa-2x fa-plus text-white"></i>
+          </a>
+          <img class="img-fluid w-100" src="https://i.postimg.cc/h4dtfpyL/IMG-20230529-WA0007.jpg" alt="">
+          <a href="img/gallery-8.jpg" data-lightbox="gallery">
+            <i class="fa fa-2x fa-plus text-white"></i>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+    <!-- Gallery End -->
+
+      <!-- event Start -->
+      <div class="animated slideInUp container-fluid bg-dark text-white py-5" id="contact" style="margin-top: 90px;">
+        <div class="container text-center py-5">
+          <div class="section-title position-relative text-center">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">bismillahirrohmanirrohiim</h6>
+            <h1 class="  animated pulse infinite font-secondary display-4">Assalamualaikum Wr.Wb.</h1>
+            <i class=" animated bounce infinite far fa-heart text-dark"></i>
+          </div>
+              <h5 class="font-weight-normal text-dark mb-3 pb-3">Dengan tidak mengurangi rasa hormat dengan ini kami mengundang Saudara/i 
+                untuk berkenan hadir pada acara Resepsi Pernikahan kami :</h5>
+              <img class="  animated swing infinite img-fluid mb-0" src="N.png" width="40%" alt="">
+              <h1 class=" animated pulse infinite font-secondary display-4 text-primary ">Nadia Nurhasanah </h1>
+              <h5 class="font-weight-normal text-light mb-3 pb-3">Putri Tunggal Dari Bapak Odih dan Ibu Ida Yulyani<br>Kp. Malang Nengah </b></h5>
+              <h2 class="font-secondary display-4 pt-2 pb-3">dengan</h2>
+
+<img class=" animated swing infinite  img-fluid mb-0" src="L.png" width="40%" alt="">
+
+              <h1 class=" animated pulse infinite font-secondary display-4 text-primary">Lapi</h1>
+              <h5 class="font-weight-normal text-light mb-3 pb-3">Putra ke-5 Dari Bapak Jaman dan Ibu Emah (Almh.) <br>Kp. Ciakar</br></h5>
+
+            
+      <h5 class="font-weight-normal text-dark mb-3 pt-5 pb-3">Yang insyaAllah akan dilaksanakan pada :</h5> 
+
+<div class="animated headShake  border-primary mt-3">
+          <h4 class="text-uppercase text-primary mb-3">AKAD NIKAH </h4>
+         <h1><i class="animated swing infinite fa fa-calendar-alt"></i></h1>
+                <p class="animated  infinite mb-0 text-dark">Senin, 26 Juni 2023<br>
+          Pukul 09.00 s/d 11.00 Wib</p>
+                  <h1 class="mt-4 mb-0"><i class="animated tada infinite fa fa-map-marker-alt"></i></h1>
+                <p class="animated  infinite mb-4 text-dark"><b>Kediaman Mempelai Wanita</b></p>
+                
+</div>
+
+
+          
+<div class="animated headShake  border-primary">
+<h4 class="text-uppercase text-primary mb-3 mt-2 ">RESEPSI </h4>
+    <h1><i class="animated swing infinite fa fa-calendar-alt"></i></h1>
+                <p class="animated  infinite mb-0 text-dark">Senin, 26 Juni 2023<br>Pukul 11.00 s/d Selesai</p>
+                  <h1 class="mt-4 mb-0"><i class="animated tada infinite fa fa-map-marker-alt text-30px"></i></h1>
+                <p class="animated  infinite mb-4 text-dark"><b>Kp. Malang Nengah RT. 004/RW.001 <br>Ds. Sukajadi Kec. Kragilan <br> Kabupaten Serang</b></p>            
+</div>
+
+                <h5 class="font-weight-normal text-dark mb-3 pt-5 pb-3">Suatu kehormatan dan kebahagiaan bagi Kami apabila Saudara/i berkenan hadir memberikan Do'a Restu dan ucapan bahagia untuk Kami. <br> Terimakasih </br></h5>
+
+                <h1 class="  animated pulse infinite font-secondary display-4">Wassalammulaikum Wr.Wb.</h1>
+
+
+<h5 class="font-weight-normal text-dark mb-3 pt-5 pb-3">Kami yang berbahagia</h5>
+          <h1 class="  animated jello infinite font-secondary display-4" >Nadia & Lapi</h1>
+          <i class=" animated bounce infinite far fa-heart text-dark"></i>
+          <i class=" animated bounce infinite far fa-heart text-dark"></i>
+          
+          
+          
+        </div>
+      </div>
+      <!-- Footer End -->
+    
+    <!-- peta Start -->
+    <div class="animated fadeIn container-fluid bg-gallery text-white py-5" id="contact" style="margin-top: 90px;">
+      <div class="section-title position-relative text-center" style="margin-bottom: 20px;">
+        <h6 class="text-uppercase text-primary" style="letter-spacing: 3px;"></h6>
+        <h1 class="  animated pulse infinite font-secondary display-4 text-dark"> Lokasi Acara </h1>
+        <i class="far fa-heart text-dark"></i>
+      </div>
+     <div class="container text-center">
+      <h1><i class="fa fa-map-marker-alt fa-spin text-danger"></i></h1>
+<p class="font-weight-normal text-dark " > <b>Kp. Malang Nengah Rt.004/Rw.001 <br>Ds. Sukajadi Kec. Kragilan<br> Kabupaten Serang </p>
+                
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8070.689569838767!2d106.23463163703096!3d-6.1835338162642435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e421f1a3a58cb0d%3A0xd66f944d90a8e920!2sMushola%20Nurul%20Hidayah%20Kp.%20Malang%20Nengah!5e1!3m2!1sid!2sid!4v1684179413689!5m2!1sid!2sid" width="100%" height="350px"style="border:2;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+       <p>
+                    <a href="
+https://maps.app.goo.gl/ZesUQS74ddWmnrTb8?g_st=ic" target="_blank" class="btn btn-primary btn-outline-primary "><i class="fa fa-globe-asia fa-spin"></i> Buka Google Maps <i class="fas fa-map-marked-alt text-success"></i></a>
+                </p>
+     </div>
+    </div>
+
+
+    
+<!-- Maps Start -
+  <div class="container-fluid py-5" id="maps">
+    <div class="container py-5">
+      <div class="section-title position-relative text-center">
+        <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;"></h6>
+        <h1 class="font-secondary display-4">Peta Lokasi</h1>
+        <i class="far fa-heart text-dark"></i>
+      </div>
+      <div class="pl-0"> 
+        <p> Kp. Malangnengah Rt.004/Rw.001 Ds. Sukajadi<br>Kec. Kragilan Kabupaten Serang </p>
+                <p>
+                    <a href="https://goo.gl/maps/KSdZjDTCpdf6JES9A" target="_blank" class="btn btn-primary mb-4 btn-outline-primary"><i class="fa fa-globe-asia fa-spin"></i> Open Google Maps <i class="fas fa-map-marked-alt text-danger"></i></a>
+                </p>
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8070.689569838767!2d106.23463163703096!3d-6.1835338162642435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e421f1a3a58cb0d%3A0xd66f944d90a8e920!2sMushola%20Nurul%20Hidayah%20Kp.%20Malang%20Nengah!5e1!3m2!1sid!2sid!4v1684179413689!5m2!1sid!2sid" width="250px" height="200px"style="border:2;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <button class="btn btn-primary font-weight-bold text-white" type="submit"><a href="https://maps.app.goo.gl/NKsGLkDsBEoJFoY98">Buka digoogle Maps</a></button>
+      </div>
+      </div>
+    </div>
+
+    <!-- Maps End -->
+<!-- ucapan Start 
+    <div class="container-fluid py-5" id="acara">
+      <div class="container py-5">
+        <div class="section-title position-relative text-center">
+          <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;"></h6>
+          <h1 class="animated pulse infinite font-secondary display-4">Ucapan Do'a</h1>
+          <i class="animated bounce infinite far fa-heart text-dark"></i>
+        </div>
+        <section class="section-7" id="doa" style="background: #fff;">
+            <div class="powr-comments" id="0caac1ba_1644046490"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+        </div>
+    </section>
+    </div>
+  
+      <!-- Event End -->
+    
+
+<!-- Footer Start -->
+      <div class="container-fluid bg-dark text-white py-5" id="contact" style="margin-top: 90px;">
+        <div class="container text-center py-5">
+          <div class="section-title position-relative text-center">
+            <h1 class=" animated pulse infinite font-secondary display-3 text-white">Do'a Pengantin</h1>
+            <i class="animated pulse infinite far fa-heart text-white"></i>
+          </div>
+ <p class="font-weight-normal text-dark mb-3 pt-2 pb-3"> <br>سْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ </br>
+   
+   وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ
+
+<br>
+   </br>
+<br>wa min āyātihī an khalaqa lakum min anfusikum azwājal litaskunū ilaihā wa ja'ala bainakum mawaddataw wa raḥmah, inna fī żālika la`āyātil liqaumiy yatafakkarụn</br>
+<br>
+   </br>
+Artinya: "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan
+Artinya: "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.<br><i>"QS. Ar Rum:21"</i></br>
+   </p>
+              
+              
+
+              <div>  <h5 class="font-weight-normal text-muted mb-3 pt-0 pb-0"></h5>       <i class="animated jello infinite far fa-heart text-dark"></i>
+          <i class=" animated jello infinite far fa-heart text-dark"></i>
+          <h1 class=" animated pulse infinite font-secondary display-4 text-dark" >Nadia & Lapi</h1>
+              </div>
+        </div>
+      </div>
+      <!-- doa End -->
+
+
+      <!-- Friends & Family Start -->
+
+      <!-- Friends & Family End -->
+
+                     <!-- Event Start -
+    <div class="container-fluid py-5" id="event">
+      <div class="container py-5">
+        <div class="section-title position-relative text-center">
+          <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;"></h6>
+          <h1 class="font-secondary display-4">Do'a Pengantin.</h1>
+          <i class="far fa-heart text-dark"></i>
+        </div>
+        <div class="h-100 d-flex flex-column justify-content-center bg-dark p-4 ml-md-3">
+          <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+ <p class="font-primary size-3 text-white text-center ml-3 mr-3"> <b>بِسْمِ اللّهِ الرَّحْمَنِ الرَّحِيْ </br>
+   
+   وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ
+
+<br>
+   </br>
+<br>wa min āyātihī an khalaqa lakum min anfusikum azwājal litaskunū ilaihā wa ja'ala bainakum mawaddataw wa raḥmah, inna fī żālika la`āyātil liqaumiy yatafakkarụn</br>
+<br>
+   </br>
+Artinya: "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan
+Artinya: "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.<br><i>"QS. Ar Rum:21"</i></br>
+   </p>
+              
+              
+
+              <div>  <h5 class="font-weight-normal text-muted mb-3 pt-0 pb-0"></h5>       <i class="far fa-heart text-light"></i>
+          <i class="far fa-heart text-light"></i>
+          <h1 class="font-secondary display-6 text-white" >Nadia & Lapi</h1>
+          </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Event End -->
+
+
+      <!-- RSVP Start -->
+      <div class="container-fluid py-5" id="rsvp">
+        <div class="container py-5">
+          <div class="section-title position-relative text-center">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;"></h6>
+            <h1 class=" animated jello infinite font-secondary display-4">Join Our Party</h1>
+            <i class=" animated pulse infinite far fa-heart text-dark"></i>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="text-center">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-sm-6">
+                      <input type="text" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Your Name" />
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <input type="email" class="form-control bg-secondary border-0 py-4 px-3"
+                        placeholder="Your Email" />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-sm-6">
+                      <select class="form-control bg-secondary border-0" style="height: 52px;">
+                        <option>Number of Guest</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <select class="form-control bg-secondary border-0" style="height: 52px;">
+                        <option>I'm Attending</option>
+                        <option>All Events</option>
+                        <option>Wedding Party</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="5" placeholder="Message"
+                      required="required"></textarea>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- RSVP End -->
+
+
+      <!-- Footer Start -->
+      <div class="container-fluid bg-dark text-white py-5" id="contact" style="margin-top: 90px;">
+        <div class="container text-center py-5">
+          <div class="section-title position-relative text-center">
+            <h1 class="animated bounce infinite  font-secondary display-3 text-white">Thank You</h1>
+            <i class=" animated pulse infinite far fa-heart text-white"></i>
+          </div>
+          <div class="d-flex justify-content-center mb-4">
+            <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="d-flex justify-content-center py-2">
+            <p class="text-white  animated fadeInLeft  infinite " href="#">Bagiundangan.yuk</p>
+            <span class="px-3">|</span>
+            <p class="text-white animated fadeInRight infinite " href="#">087783232328</p>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End -->
+
+
+      <!-- Scroll to Bottom -->
+      <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+      <!-- Back to Top -->
+      <a href="#" class="btn btn-lg back-to-top animated swing infinite">
+        <img class="popup__love" src="https://i.postimg.cc/mZPq5L2y/20230604-152422-0000-removebg-preview.png" width="30px"></a>
+
+
+      <!-- JavaScript Libraries -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+      <script src="lib/easing/easing.min.js"></script>
+      <script src="lib/waypoints/waypoints.min.js"></script>
+      <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+      <script src="lib/isotope/isotope.pkgd.min.js"></script>
+      <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+      <!-- Template Javascript -->
+      <script src="js/main.js"></script>
+</body>
+
+</html>
