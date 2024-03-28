@@ -134,6 +134,20 @@ body {
     animation: spin-icon 5s linear infinite;
 }
 
+@keyframes spin-logo {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-bu {
+    animation: spin-logo 25s linear infinite;
+}
+
 @keyframes love {
     50% {
         transform: translateY(1rem);
