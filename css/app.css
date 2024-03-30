@@ -84,7 +84,13 @@ body {
   width: 55px;
   height: 30px;
 }
-
+.poto {
+    position: relative;
+    width: 514rem;
+    height: 14rem;
+    overflow: hidden;
+}
+    
 
 .font-arabicputih {
     font-family: 'Noto Naskh Arabic', serif !important;
