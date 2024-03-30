@@ -17,15 +17,17 @@ body {
   font-family: "Pirata One", system-ui;
   font-weight: 400;
   font-style: normal;
-  color: #111111 !important;
 }
 
 .engagement-regular {
-  font-family: "Engagement", cursive;
-  font-weight: 400;
+  font-family: "Engagement", cursive !important;
   font-style: normal;
 }
-
+.engagement-hitam {
+  font-family: "Engagement", cursive !important;
+  color: #111111 !important;
+ 
+}
 
 
 .font-esthetic {
