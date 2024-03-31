@@ -154,7 +154,6 @@ footer {
 
 .circle-container {
   position: absolute;
-  overflow: hidden;
   -webkit-transform: translateY(-10vh);
           transform: translateY(-10vh);
   -webkit-animation-iteration-count: infinite;
@@ -163,7 +162,7 @@ footer {
           animation-timing-function: linear;
 }
 .circle-container .circle {
-    overflow: hidden;
+  
   width: 100%;
   height: 100%;
   border-radius: 50%;
