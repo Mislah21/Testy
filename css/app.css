@@ -21,13 +21,13 @@ body {
 
 .engagement-regular {
   font-family: "Engagement", cursive;
-  font-color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 
 .engagement-hitam {
   font-family: "Engagement", cursive;
-  font-color: #111111 !important;
+   color: #111111 !important;
 }
 
 .font-esthetic {
@@ -193,7 +193,7 @@ footer {
 .logobu{
   position: relative;
   top:0px;
-  width: 55px;
+  width: 48px;
   height: 30px;
 }
 
