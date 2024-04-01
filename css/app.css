@@ -14,6 +14,22 @@ body {
     
 }
 
+.pirata-one-regular {
+  font-family: "Pirata One", system-ui;
+  color:#ffffff !important;
+}
+
+.engagement-regular {
+  font-family: "Engagement", cursive;
+  font-color: #ffffff !important;
+}
+
+
+.engagement-hitam {
+  font-family: "Engagement", cursive;
+  font-color: #111111 !important;
+}
+
 .font-esthetic {
     font-family: 'Sacramento', cursive !important;
     color: #111111 !important;
@@ -130,6 +146,19 @@ body {
     animation: spin-icon 5s linear infinite;
 }
 
+@keyframes spin-logo {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-bu {
+    animation: spin-logo 30s linear infinite;
+}
 @keyframes love {
     50% {
         transform: translateY(1rem);
@@ -161,6 +190,13 @@ footer {
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
 }
+.logobu{
+  position: relative;
+  top:0px;
+  width: 55px;
+  height: 30px;
+}
+
 .circle-container .circle {
   
   width: 100%;
