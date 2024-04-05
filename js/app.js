@@ -207,7 +207,9 @@ const util = (() => {
 
     const buka = async (button) => {
         button.disabled = true;
+        document.getElementById ('welcome').style.opacity = '0';
         document.querySelector('body').style.overflowY = 'scroll';
+        window.scrollTo (0, 0);
         AOS.init();
         audio.play();
 
@@ -215,7 +217,7 @@ const util = (() => {
             document.getElementById('alertDiv').style.display = 'none';
         }
 
-        opacity('welcome');
+        
         document.getElementById('tombol-musik').style.display = 'block';
         timer();
 
